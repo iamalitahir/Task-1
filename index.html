@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API Integration Demo</title>
+  <link rel="stylesheet" href="style.css">
+  <style>.hidden{display:none}</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Users — API Integration Demo</h1>
+    <form id="createForm">
+      <h2>Create New User</h2>
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="text" id="phone" placeholder="Phone" required>
+      <button type="submit">Create User</button>
+    </form>
+    <div id="status" class="hidden"></div>
+    <div id="users" class="cards"></div>
+  </div>
+  <div id="editModal" class="modal hidden">
+    <div class="modal-content">
+      <button id="closeModal" class="close">&times;</button>
+      <h2>Edit User</h2>
+      <input type="text" id="editName" placeholder="Name">
+      <input type="email" id="editEmail" placeholder="Email">
+      <input type="text" id="editPhone" placeholder="Phone">
+      <div class="actions">
+        <button id="saveEdit">Save</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
